@@ -117,14 +117,17 @@ details {
   padding: 1.4rem 1.8rem;
   border: 2px solid var(--muted);
   border-radius: var(--radius);
+  margin: 1rem auto;
+}
+
+details p {
+  border-top: 1px solid var(--accent);
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 summary {
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-right: 2rem;
   width: fit-content;
-  border-bottom: 1px solid var(--accent);
   cursor: pointer;
 }
 
@@ -350,7 +353,7 @@ section {
 }
 
 .tech-used > span {
-  /* border: 2px solid var(--bg-0); */
+  border: 2px solid var(--bg-0);
   border-radius: var(--radius);
   padding: 0.2rem 0.6rem;
   line-height: 3.6rem;
@@ -434,4 +437,32 @@ section {
   color: var(--accent);
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 850px) {
+  .site-header {
+    justify-content: center;
+  }
+
+  .site-header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section > * {
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .main-h1 {
+    margin-right: 0;
+  }
+
+  .main-p {
+    margin-left: 0;
+  }
+
+  /* .card {
+  } */
 }
