@@ -463,6 +463,15 @@ section {
     margin-left: 0;
   }
 
-  /* .card {
-  } */
+  .services-section .card {
+    width: 100%;
+  }
+
+  .portfolio-section .card {
+    width: 100%;
+  }
+
+  .pricing-section .card {
+    width: 100%;
+  }
 }
